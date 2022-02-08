@@ -71,7 +71,7 @@ Find out what packages installed not from repos and recommended to delete.
 package-cleanup --orphans 
 package-cleanup --leaves
  ```
-In my case removing mlnx-ofa_kernel removed qemu-kvm app. 
+In my case removing **mlnx-ofa_kernel** removed **qemu-kvm** app. 
 
 Or you can use yum to autoremove but be careful and check the packages it will try to delete.
  ```
