@@ -217,9 +217,10 @@ Update ssh keys
  ```
 ssh-keygen -f /home/fire/.ssh/known_hosts -R "[192.168.1.1]:22"
  ```
-Update HP repo from 7.3-7.4 to 8.4-8.5
-Change values in /etc/yum.repos.d/hp.repo
+Update HP repo from 7.3-7.4 to 8.4-8.5. Change values in /etc/yum.repos.d/hp.repo
+
 spp RHEL repo from 7.2 to 8.5
+
 mcp centos repo from 7.3 to 8.4
 
 Update hp packages.
