@@ -131,23 +131,18 @@ rpm -e vdo
 **In some cases you can’t remove kernels from working OS, so you should boot into recovery mode and do it manually.**
 
 1. Download kernel, kernel-core and kernel-modules, linux-firmware.
-2. Boot in rescue mode.
-3. Remove existing linux-firmware package and install downloaded package.
-4. Then Install kernel packages by (rpm -iv kernel*)
-5. Reboot
-
-Reboot rescue.
- ```
-route add default gw 192.168.1.1
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-4.18.0-348.el8.x86_64.rpm
 wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-modules-4.18.0-348.el8.x86_64.rpm
 wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-core-4.18.0-348.el8.x86_64.rpm
 
+2. Boot in rescue mode.
+3. Remove existing linux-firmware package and install downloaded package.
+```
 dnf remove kexec-tools
 dnf remove ivtv-firmware
 dnf remove linux-firmware
 
+4. Then Install kernel packages by (rpm -iv kernel*)
 rpm -iv linux-firmware-20210702-103.gitd79c2677.el8.noarch.rpm
 rpm -iv kernel-modules-4.18.0-348.el8.x86_64.rpm
 
@@ -157,9 +152,10 @@ rpm -iv --replacepkgs kernel-core-4.18.0-348.el8.x86_64.rpm
 
 rpm -e --nodeps sysvinit-tools
 rpm -q kernel-3.10.. and soft that depends on it
-
-reboot
  ```
+5. Reboot
+
+
 
 **Ok, we removed old kernels and we are ready for upgrade.**
 
