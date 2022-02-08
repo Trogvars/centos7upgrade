@@ -124,7 +124,7 @@ rpm -e --nodeps kmod-kvdo
 rpm -e vdo
  ```
 
- # In some cases you can’t remove kernels from working OS, so you should boot into recovery mode and do it manually.
+**In some cases you can’t remove kernels from working OS, so you should boot into recovery mode and do it manually.**
 
 1. Download kernel, kernel-core and kernel-modules, linux-firmware.
 2. Boot in rescue mode.
@@ -157,8 +157,9 @@ rpm -q kernel-3.10.. and soft that depends on it
 reboot
  ```
 
-Ok, we removed old kernels and we are ready for upgrade.
- ```
+**Ok, we removed old kernels and we are ready for upgrade.**
+
+```
 dnf --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
  ```
 
@@ -212,8 +213,12 @@ Update ssh keys
  ```
 ssh-keygen -f /home/fire/.ssh/known_hosts -R "[192.168.1.1]:22"
  ```
-update HP repo from 7.3-7.4 to 8.4
+Update HP repo from 7.3-7.4 to 8.4-8.5
+Change values in /etc/yum.repos.d/hp.repo
+spp RHEL repo from 7.2 to 8.5
+mcp centos repo from 7.3 to 8.4
 
+Update hp packages.
  ```
 dnf update —allowerasing
  ```
