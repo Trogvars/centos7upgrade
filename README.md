@@ -55,7 +55,7 @@ Finally we can boot into our system.
 
  ## Doing upgrade of Centos 7 server to Centos 8.
 
-**_If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode and remove old kernels._**
+**_If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode just in case..**
 
 Do your network settings in /etc/sysconfig/network-scripts.
 
