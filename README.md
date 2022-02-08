@@ -77,7 +77,7 @@ Or you can use yum to autoremove but be careful and check the packages it will t
  ```
 yum autoremove
  ```
-Installing dnf packet manager - it work in Centos 8 by default.
+Installing dnf packet manager - it works in Centos 8 by default.
  ```
 yum install dnf
  ```
