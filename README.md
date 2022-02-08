@@ -131,10 +131,13 @@ rpm -e vdo
 **In some cases you can’t remove kernels from working OS, so you should boot into recovery mode and do it manually.**
 
 1. Download kernel, kernel-core and kernel-modules, linux-firmware.
+```
 wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-4.18.0-348.el8.x86_64.rpm
-wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-modules-4.18.0-348.el8.x86_64.rpm
-wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-core-4.18.0-348.el8.x86_64.rpm
 
+wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-modules-4.18.0-348.el8.x86_64.rpm
+
+wget https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/kernel-core-4.18.0-348.el8.x86_64.rpm
+```
 2. Boot in rescue mode.
 3. Remove existing linux-firmware package and install downloaded package.
 ```
