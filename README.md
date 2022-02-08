@@ -50,13 +50,14 @@ dracut -f /boot/initramfs-3.10.0-1160.49.1.el7.x86_64.img 3.10.0-1160.49.1.el7.x
   ```
 And adding “*edd=off console=tty0*” to kernel boot params.
  
-Finally we can boot into our system. And to other settings like network. 
- 
+Finally we can boot into our system.  
 
 
  ## Doing upgrade of Centos 7 server to Centos 8.
 
-If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode and remove old kernels.
+**_If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode and remove old kernels._**
+
+Do your network settings in /etc/sysconfig/network-scripts.
 
  ```
 yum install rpmconf epel-release yum-utils
