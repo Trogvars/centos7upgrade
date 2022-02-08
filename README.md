@@ -1,7 +1,7 @@
  
- ## Doing upgrade of Centos 7 server to Centos 8.
+ # Doing upgrade of Centos 7 server to Centos 8.
  
- # 1. Migrating backup of working system to virtual guest or another server.
+ ## 1. Migrating backup of working system to virtual guest or another server.
 
 Preparation of test image.
 Boot from Centos 7 CD into troubleshoot mode and skip to shell.
@@ -56,7 +56,7 @@ And adding “*edd=off console=tty0*” to kernel boot params.
 Finally we can boot into our system.  
 
 
- # 2. Upgrade Centos 8.
+ ## 2. Upgrade Centos 8.
 
 **_If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode just in case.._**
 
@@ -227,7 +227,7 @@ Update hp packages.
 dnf update —allowerasing
  ```
 
-# 3. Now we are ready to migrate to Centos 8 Stream or Rocky Linux.
+## 3. Now we are ready to migrate to Centos 8 Stream or Rocky Linux.
 
 Upgrade to Stream:
  ```
