@@ -58,7 +58,7 @@ Finally we can boot into our system.
 **_If you have a remote system, then you should have access to IPMI or something like this to be able to boot into rescue mode just in case.._**
 
 Do your network settings in /etc/sysconfig/network-scripts.
-
+First instal epel-release.
  ```
 yum install rpmconf epel-release yum-utils
  ```
